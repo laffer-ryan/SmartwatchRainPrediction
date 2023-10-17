@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFD588972ADE298D00025460 /* RainSensorPrediction Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FFD5889C2ADE298D00025460 /* RainSensorPredictionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */; };
+		FFD5889E2ADE298D00025460 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD5889D2ADE298D00025460 /* ContentView.swift */; };
+		FFD588A02ADE298E00025460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD5889F2ADE298E00025460 /* Assets.xcassets */; };
+		FFD588A32ADE298E00025460 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD588A22ADE298E00025460 /* Preview Assets.xcassets */; };
+		FFD588AD2ADE298E00025460 /* RainSensorPrediction_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD588AC2ADE298E00025460 /* RainSensorPrediction_Watch_AppTests.swift */; };
+		FFD588B72ADE298E00025460 /* RainSensorPrediction_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD588B62ADE298E00025460 /* RainSensorPrediction_Watch_AppUITests.swift */; };
+		FFD588B92ADE298E00025460 /* RainSensorPrediction_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD588B82ADE298E00025460 /* RainSensorPrediction_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFD588982ADE298D00025460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD5888A2ADE298D00025460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD588952ADE298D00025460;
+			remoteInfo = "RainSensorPrediction Watch App";
+		};
+		FFD588A92ADE298E00025460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD5888A2ADE298D00025460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD588952ADE298D00025460;
+			remoteInfo = "RainSensorPrediction Watch App";
+		};
+		FFD588B32ADE298E00025460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD5888A2ADE298D00025460 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD588952ADE298D00025460;
+			remoteInfo = "RainSensorPrediction Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFD588BF2ADE298E00025460 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FFD588972ADE298D00025460 /* RainSensorPrediction Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FFD588902ADE298D00025460 /* RainSensorPrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainSensorPrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RainSensorPrediction Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainSensorPredictionApp.swift; sourceTree = "<group>"; };
+		FFD5889D2ADE298D00025460 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFD5889F2ADE298E00025460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFD588A22ADE298E00025460 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFD588A82ADE298E00025460 /* RainSensorPrediction Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RainSensorPrediction Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD588AC2ADE298E00025460 /* RainSensorPrediction_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainSensorPrediction_Watch_AppTests.swift; sourceTree = "<group>"; };
+		FFD588B22ADE298E00025460 /* RainSensorPrediction Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RainSensorPrediction Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD588B62ADE298E00025460 /* RainSensorPrediction_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainSensorPrediction_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		FFD588B82ADE298E00025460 /* RainSensorPrediction_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainSensorPrediction_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD588932ADE298D00025460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588A52ADE298E00025460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588AF2ADE298E00025460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD588892ADE298D00025460 = {
+			isa = PBXGroup;
+			children = (
+				FFD5889A2ADE298D00025460 /* RainSensorPrediction Watch App */,
+				FFD588AB2ADE298E00025460 /* RainSensorPrediction Watch AppTests */,
+				FFD588B52ADE298E00025460 /* RainSensorPrediction Watch AppUITests */,
+				FFD588912ADE298D00025460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD588912ADE298D00025460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD588902ADE298D00025460 /* RainSensorPrediction.app */,
+				FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */,
+				FFD588A82ADE298E00025460 /* RainSensorPrediction Watch AppTests.xctest */,
+				FFD588B22ADE298E00025460 /* RainSensorPrediction Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD5889A2ADE298D00025460 /* RainSensorPrediction Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */,
+				FFD5889D2ADE298D00025460 /* ContentView.swift */,
+				FFD5889F2ADE298E00025460 /* Assets.xcassets */,
+				FFD588A12ADE298E00025460 /* Preview Content */,
+			);
+			path = "RainSensorPrediction Watch App";
+			sourceTree = "<group>";
+		};
+		FFD588A12ADE298E00025460 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFD588A22ADE298E00025460 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFD588AB2ADE298E00025460 /* RainSensorPrediction Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD588AC2ADE298E00025460 /* RainSensorPrediction_Watch_AppTests.swift */,
+			);
+			path = "RainSensorPrediction Watch AppTests";
+			sourceTree = "<group>";
+		};
+		FFD588B52ADE298E00025460 /* RainSensorPrediction Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD588B62ADE298E00025460 /* RainSensorPrediction_Watch_AppUITests.swift */,
+				FFD588B82ADE298E00025460 /* RainSensorPrediction_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "RainSensorPrediction Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD5888F2ADE298D00025460 /* RainSensorPrediction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD588C02ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction" */;
+			buildPhases = (
+				FFD5888E2ADE298D00025460 /* Resources */,
+				FFD588BF2ADE298E00025460 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD588992ADE298D00025460 /* PBXTargetDependency */,
+			);
+			name = RainSensorPrediction;
+			productName = RainSensorPrediction;
+			productReference = FFD588902ADE298D00025460 /* RainSensorPrediction.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FFD588952ADE298D00025460 /* RainSensorPrediction Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD588BC2ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch App" */;
+			buildPhases = (
+				FFD588922ADE298D00025460 /* Sources */,
+				FFD588932ADE298D00025460 /* Frameworks */,
+				FFD588942ADE298D00025460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RainSensorPrediction Watch App";
+			productName = "RainSensorPrediction Watch App";
+			productReference = FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFD588A72ADE298E00025460 /* RainSensorPrediction Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD588C32ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch AppTests" */;
+			buildPhases = (
+				FFD588A42ADE298E00025460 /* Sources */,
+				FFD588A52ADE298E00025460 /* Frameworks */,
+				FFD588A62ADE298E00025460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD588AA2ADE298E00025460 /* PBXTargetDependency */,
+			);
+			name = "RainSensorPrediction Watch AppTests";
+			productName = "RainSensorPrediction Watch AppTests";
+			productReference = FFD588A82ADE298E00025460 /* RainSensorPrediction Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFD588B12ADE298E00025460 /* RainSensorPrediction Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD588C62ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch AppUITests" */;
+			buildPhases = (
+				FFD588AE2ADE298E00025460 /* Sources */,
+				FFD588AF2ADE298E00025460 /* Frameworks */,
+				FFD588B02ADE298E00025460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD588B42ADE298E00025460 /* PBXTargetDependency */,
+			);
+			name = "RainSensorPrediction Watch AppUITests";
+			productName = "RainSensorPrediction Watch AppUITests";
+			productReference = FFD588B22ADE298E00025460 /* RainSensorPrediction Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD5888A2ADE298D00025460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FFD5888F2ADE298D00025460 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FFD588952ADE298D00025460 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FFD588A72ADE298E00025460 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FFD588952ADE298D00025460;
+					};
+					FFD588B12ADE298E00025460 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FFD588952ADE298D00025460;
+					};
+				};
+			};
+			buildConfigurationList = FFD5888D2ADE298D00025460 /* Build configuration list for PBXProject "RainSensorPrediction" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFD588892ADE298D00025460;
+			productRefGroup = FFD588912ADE298D00025460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD5888F2ADE298D00025460 /* RainSensorPrediction */,
+				FFD588952ADE298D00025460 /* RainSensorPrediction Watch App */,
+				FFD588A72ADE298E00025460 /* RainSensorPrediction Watch AppTests */,
+				FFD588B12ADE298E00025460 /* RainSensorPrediction Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD5888E2ADE298D00025460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588942ADE298D00025460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD588A32ADE298E00025460 /* Preview Assets.xcassets in Resources */,
+				FFD588A02ADE298E00025460 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588A62ADE298E00025460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588B02ADE298E00025460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD588922ADE298D00025460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD5889E2ADE298D00025460 /* ContentView.swift in Sources */,
+				FFD5889C2ADE298D00025460 /* RainSensorPredictionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588A42ADE298E00025460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD588AD2ADE298E00025460 /* RainSensorPrediction_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD588AE2ADE298E00025460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD588B72ADE298E00025460 /* RainSensorPrediction_Watch_AppUITests.swift in Sources */,
+				FFD588B92ADE298E00025460 /* RainSensorPrediction_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFD588992ADE298D00025460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD588952ADE298D00025460 /* RainSensorPrediction Watch App */;
+			targetProxy = FFD588982ADE298D00025460 /* PBXContainerItemProxy */;
+		};
+		FFD588AA2ADE298E00025460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD588952ADE298D00025460 /* RainSensorPrediction Watch App */;
+			targetProxy = FFD588A92ADE298E00025460 /* PBXContainerItemProxy */;
+		};
+		FFD588B42ADE298E00025460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD588952ADE298D00025460 /* RainSensorPrediction Watch App */;
+			targetProxy = FFD588B32ADE298E00025460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFD588BA2ADE298E00025460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFD588BB2ADE298E00025460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FFD588BD2ADE298E00025460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RainSensorPrediction Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RainSensorPrediction;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FFD588BE2ADE298E00025460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RainSensorPrediction Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RainSensorPrediction;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		FFD588C12ADE298E00025460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = RainSensorPrediction;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FFD588C22ADE298E00025460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = RainSensorPrediction;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD588C42ADE298E00025460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryanl.com.me.RainSensorPrediction-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainSensorPrediction Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RainSensorPrediction Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FFD588C52ADE298E00025460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryanl.com.me.RainSensorPrediction-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainSensorPrediction Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RainSensorPrediction Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		FFD588C72ADE298E00025460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryanl.com.me.RainSensorPrediction-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RainSensorPrediction Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		FFD588C82ADE298E00025460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryanl.com.me.RainSensorPrediction-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RainSensorPrediction Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD5888D2ADE298D00025460 /* Build configuration list for PBXProject "RainSensorPrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD588BA2ADE298E00025460 /* Debug */,
+				FFD588BB2ADE298E00025460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD588BC2ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD588BD2ADE298E00025460 /* Debug */,
+				FFD588BE2ADE298E00025460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD588C02ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD588C12ADE298E00025460 /* Debug */,
+				FFD588C22ADE298E00025460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD588C32ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD588C42ADE298E00025460 /* Debug */,
+				FFD588C52ADE298E00025460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD588C62ADE298E00025460 /* Build configuration list for PBXNativeTarget "RainSensorPrediction Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD588C72ADE298E00025460 /* Debug */,
+				FFD588C82ADE298E00025460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD5888A2ADE298D00025460 /* Project object */;
+}
