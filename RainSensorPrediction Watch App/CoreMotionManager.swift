@@ -15,7 +15,7 @@ class CoreMotionManager: ObservableObject {
     
     func getWeather() async throws -> Weather? {
         if CMRecordedPressureData.accessInstanceVariablesDirectly {
-            var weather = Weather(
+            let weather = Weather(
                 barometerPressure: convertToHectoPascals(measurement: pressureManager.pressure).value,
                 temperature: convertToCelsius(measurement: pressureManager.temperature).value,
                 lastUpdate: pressureManager.startDate
