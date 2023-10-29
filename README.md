@@ -1,14 +1,15 @@
 ## README
-Project: Smart Rain SmartWatch Project
-Description: This project involves the development and deployment of a lightweight machine learning application for watchOS smartwatches. The model below was developed in Python then export to a .mlmodel package so that it could be implemented in iOS. The development of the smartwatch artifacts is done using Swift, SwiftUI and created in Xcode.
+### Project: Smart Rain SmartWatch Project
+#### Description: 
+This project involves the development and deployment of a lightweight machine learning application for watchOS smartwatches. The model below was developed in Python then export to a .mlmodel package so that it could be implemented in iOS. The development of the smartwatch artifacts is done using Swift, SwiftUI and created in Xcode.
 
 The application is used to predict the chance of rain in the near future. The goal is to be able to warn people when they are outdoors so that they can make appropriate plans. Only specific artifacts of the application have been developed including the predictive model, app storage and a mock main front-end.
 
 
 
-Installation of Python portion:
+### Installation of Python portion:
 
-Clone this repository:
+#### Clone this repository:
 git clone https://github.com/[laffer-ryan]/[SmartwatchRainPrediction].git
 Install the dependencies:
 cd [SmartwatchRainPrediction]
@@ -21,7 +22,7 @@ Run the project:
 python [Main script file]
 Usage:
 
-To run Application:
+#### To run Application:
 
 Ensure that you have Xcode and Swift installed. 
 Current version:
