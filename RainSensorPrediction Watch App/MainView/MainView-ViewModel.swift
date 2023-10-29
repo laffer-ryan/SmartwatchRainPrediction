@@ -5,54 +5,111 @@
 //  Created by Ryan Lafferty on 2/10/23.
 //
 
-import Foundation
+import SwiftUI
 import CoreML
 import CoreMotion
 
 @MainActor final class MainViewViewModel: ObservableObject {
     
+    @AppStorage("previousWeather") private var storedWeather: Data?
     
     private let altimeter = CMAltimeter();
-    @Published var alertItem: AlertItem?;
+    @Published var alertItem: AlertItem? = nil;
     @Published var isLoading = false;
     @Published var showingAlert = false;
-    @Published var weather: Weather;
+    @Published var prediction: Double = 0.0;
     
-    @Published var currentTemperature: Double = 20.0;
-    @Published var currentPressure: Double = 930.0;
-    @Published var predictedTemperature: Double = 50.0;
+    @Published var weather = Weather();     // data from sensors
+    @State var pastWeather = Weather();    // data from previous save function
+    
     
     let coreMotionManager = CoreMotionManager();
     
-    init() {
-        weather = Weather(barometerPressure: 0.0, temperature: 0.0, lastUpdate: Date())
-        getWeather();
-    }
-    
-    
+    // accessing CoreMotion data which comes from sensor on request
     func getWeather() {
-        isLoading = true;
-        Task{
+        Task {
             do {
-                weather = try await coreMotionManager.getWeather() ?? Weather(barometerPressure: currentPressure, temperature: currentTemperature, lastUpdate: Date());
+                isLoading = true;
+                //This will access the sensor data which is 0 and 0 at the moment
+//                weather = try await coreMotionManager.getWeather() ?? Weather(barometerPressure: 0,
+//                                                                              temperature: 0,
+//                                                                              lastUpdate: Date());
+                
+                weather = Weather(barometerPressure: 900, temperature: 10, lastUpdate: Date());
+                
                 isLoading = false
             } catch {
                 isLoading = false
-                print(error)
-                throw APError.invalidResponse
-                
+                alertItem = AlertContext.invalidResponse
+            }
+        }
+    }
+    
+    // get previously saved weather data from AppStorage and save it to pastWeather
+    func fetchPastWeather() {
+        guard let storedWeather = storedWeather else {return}
+        
+        do {
+            pastWeather = try JSONDecoder().decode(Weather.self, from: storedWeather)
+            saveWeather()
+        } catch {
+            alertItem = AlertContext.invalidWeatherData
+        }
+    }
+    
+    
+    // save AppStorage data
+    func saveWeather() {
+        // Need to guard against saving incorrect data or within 30 minutes of the last saved data
+        if (Date().timeIntervalSince(pastWeather.lastUpdate) > TimeInterval(30*60)) {
+            do{
+                let data = try JSONEncoder().encode(weather)
+                storedWeather = data
+            } catch {
+                alertItem = AlertContext.invalidWeatherData
+            }
+            
+        } else {
+            storedWeather = storedWeather
+        }
+    }
+    
+    
+    // prediction function to find the probability of rain
+    func calculateRainPercentage() {
+        Task {
+            do{
+                isLoading = true
+                let mlManager = MLManager(temperature: weather.temperature, pastTemperature: pastWeather.temperature, pressure: weather.barometerPressure, pastPressure: pastWeather.barometerPressure);
+                prediction = try await mlManager.calculateRainPercentage();
+                isLoading = false
+            } catch {
+                isLoading = false
+                throw APError.predictionError
             }
         }
     }
 }
-    
-    
-    
-    
-    
-    
+
+
+
+
+//    var isValidWeather: Bool {
+//        guard   !weather.barometerPressure.isNaN && !weather.barometerPressure.isLess(than: 850) && !weather.barometerPressure > 1150 &&
+//                !weather.temperature.isNaN && !weather.temperature.isLess(than: -30) && !weather.temperature > 45
+//        else {
+//            alertItem = AlertContext.invalidWeatherData
+//            return false
+//        }
+//        guard (weather.lastUpdate - weather.lastUpdate) < TimeInterval(15*60) {
+//            return false
+//        }
+//        return true
+//    }
+
+
 // Altimeter will be needed in the future when model data isn't limited
-    
+
 //    func myAltimeter(){
 //        do{
 //            if CMAltimeter.isAbsoluteAltitudeAvailable() {
@@ -76,76 +133,11 @@ import CoreMotion
 
 
 
+//    @Published var currentTemperature: Double = 20.0;
+//    @Published var currentPressure: Double = 930.0;
+//    @Published var predictedTemperature: Double = 50.0;
 
 
-//    var tempPressure: Double {
-//        calculateTempPressure()
-//    }
-//    
-//    var changePressure: Double {
-//        calculateChangePressure()
-//    }
-//    
-//    var changeTemperature: Double {
-//        calculateChangeTemperature()
-//    }
-//    
-//    
-//    
-//    @Published var weathers = [Weather] {
-//        didSet {
-//            let encoder = JSONEncoder()
-//            if let encoded = try? encoder.encode(weathers) {
-//                UserDefaults.standard.set(encoded, forKey: "Items")
-//            }
-//        }
-//    }
-//    init() {
-//        let decoder = JSONDecoder()
-//        if let savedWeather = UserDefaults.standard.data(forKey: "Items") {
-//            if let decodedWeather = try? decoder.decode([Weather].self, from: savedWeather) {
-//                weathers = decodedWeather
-//                return
-//            }
-//        }
-//        weathers = []
-//    }
-    
-//    func predictTemperature() {
-//        do {
-//            let model: logisticRegressionModel = try logisticRegressionModel(configuration: .init())
-//            
-//            var predict = try model.prediction(
-//                temp: Double(currentTemperature),
-//                pressure: Double(currentPressure),
-//                temp_pressure: Double(tempPressure),
-//                change_pressure: Double(changePressure),
-//                change_temp: Double(changeTemperature)
-//            )
-//            } catch {
-//                alertItem = AlertContext.invalidResponse
-//                showingAlert = true
-//        }
-//    }
-//    
-//    
-//    func calculateTempPressure() -> Double {
-//        
-//        let MIN_VALUE: Double = 8.2
-//        var tempPressure: Double
-//        tempPressure = currentPressure / (currentTemperature + MIN_VALUE)
-//        return tempPressure
-//    }
-//    
-//    func calculateChangePressure() -> Double {
-//        let newPressure = pastPressure - currentPressure
-//        return newPressure
-//    }
-//    
-//    func calculateChangeTemperature() -> Double {
-//        let newTemperature = pastTemperature - currentTemperature
-//        return newTemperature
-//    }
-//    
+
 
 

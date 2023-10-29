@@ -1,9 +1,0 @@
-{
-  "MLModelDescriptionKey" : "Predicts Weather it is Raining using Logistic Regression",
-  "MLModelCreatorDefinedKey" : {
-    "com.github.apple.coremltools.version" : "7.0",
-    "com.github.apple.coremltools.source" : "scikit-learn==1.1.2"
-  },
-  "MLModelAuthorKey" : "Ryan Lafferty",
-  "MLModelLicenseKey" : "MIT"
-}

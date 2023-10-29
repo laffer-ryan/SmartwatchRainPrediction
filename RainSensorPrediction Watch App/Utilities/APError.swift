@@ -10,7 +10,9 @@ import Foundation
 enum APError: Error {
     case invalidAuthorization
     case invalidPressureResponse
-    case unavailableAltimeterData
-    case invalidAltimeterData
+    case invalidCoreMotionResponse
+    case invalidCoreMotionData
     case invalidResponse
+    case predictionError
+    case invalidWeatherData
 }

@@ -24,16 +24,24 @@ struct AlertContext {
                                               message: Text("The ambient pressure data is currently unavailable"),
                                               dismissButton: .default(Text("OK")))
     
-    static let unavailableAltimeterData = AlertItem(title: Text("Pressure Error"),
-                                              message: Text("The altimeter data is currently unavailable"),
+    static let invalidCoreMotionResponse = AlertItem(title: Text("Pressure Error"),
+                                              message: Text("Failed to collect Core Motion Data"),
                                               dismissButton: .default(Text("OK")))
     
-    static let invalidAltimeterData = AlertItem(title: Text("Pressure Error"),
-                                              message: Text("The altimeter data is invalid"),
+    static let invalidCoreMotionData = AlertItem(title: Text("Pressure Error"),
+                                              message: Text("The Core Motion data is invalid"),
                                               dismissButton: .default(Text("OK")))
     
     static let invalidResponse = AlertItem(title: Text("Server Error"),
                                               message: Text("Invalid response from server. Please try again later."),
+                                              dismissButton: .default(Text("OK")))
+    
+    static let predictionError = AlertItem(title: Text("Prediction Error"),
+                                              message: Text("Error when predicting the model"),
+                                              dismissButton: .default(Text("OK")))
+    
+    static let invalidWeatherData = AlertItem(title: Text("Incorrect Weathe Data"),
+                                              message: Text("Weather Data is incorrect. Please try refreshing the page"),
                                               dismissButton: .default(Text("OK")))
 
 }

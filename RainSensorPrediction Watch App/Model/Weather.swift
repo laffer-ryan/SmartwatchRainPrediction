@@ -9,21 +9,9 @@ import Foundation
 
 struct Weather: Identifiable, Codable {
     var id = UUID()
-    let barometerPressure: Double
-    let temperature: Double
-    let lastUpdate: Date
-    
-    
+    var barometerPressure: Double = 20.0
+    var temperature: Double = 20.0
+    var lastUpdate =  Date()
 }
 
 
-//#if DEBUG
-//extension Weather {
-//    static var example: Weather {
-//        Weather(barometerPressure: 198.8,
-//                temperature: 20,
-//                percentChanceRain: 90,
-//                lastUpdate: "5:00")
-//    }
-//}
-//#endif

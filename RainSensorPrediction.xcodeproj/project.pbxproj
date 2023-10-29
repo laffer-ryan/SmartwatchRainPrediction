@@ -12,6 +12,8 @@
 		FF833E6C2ADE36A60078C5CE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF833E6B2ADE36A60078C5CE /* Alert.swift */; };
 		FF833E732ADF40AE0078C5CE /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF833E722ADF40AE0078C5CE /* CoreMotionManager.swift */; };
 		FF92653C2AEA38C900F84A0A /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92653B2AEA38C900F84A0A /* APError.swift */; };
+		FF9265402AEA4A0700F84A0A /* RandomForestModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FF92653E2AEA4A0700F84A0A /* RandomForestModel.mlpackage */; };
+		FF9265432AEA61BC00F84A0A /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9265422AEA61BC00F84A0A /* MLManager.swift */; };
 		FFD588972ADE298D00025460 /* RainSensorPrediction Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FFD5889C2ADE298D00025460 /* RainSensorPredictionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */; };
 		FFD5889E2ADE298D00025460 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD5889D2ADE298D00025460 /* MainView.swift */; };
@@ -66,6 +68,8 @@
 		FF833E6B2ADE36A60078C5CE /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FF833E722ADF40AE0078C5CE /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
 		FF92653B2AEA38C900F84A0A /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		FF92653E2AEA4A0700F84A0A /* RandomForestModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = RandomForestModel.mlpackage; path = "RainSensorPrediction Watch App/Utilities/RandomForestModel.mlpackage"; sourceTree = SOURCE_ROOT; };
+		FF9265422AEA61BC00F84A0A /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
 		FFD588902ADE298D00025460 /* RainSensorPrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainSensorPrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD588962ADE298D00025460 /* RainSensorPrediction Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RainSensorPrediction Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainSensorPredictionApp.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		FF833E692ADE33BB0078C5CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF9265412AEA619200F84A0A /* Managers */,
 				FF833E672ADE33A50078C5CE /* Weather.swift */,
 			);
 			path = Model;
@@ -124,10 +129,20 @@
 		FF833E6D2ADE36D80078C5CE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FF92653E2AEA4A0700F84A0A /* RandomForestModel.mlpackage */,
 				FF833E6B2ADE36A60078C5CE /* Alert.swift */,
 				FF92653B2AEA38C900F84A0A /* APError.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FF9265412AEA619200F84A0A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF833E722ADF40AE0078C5CE /* CoreMotionManager.swift */,
+				FF9265422AEA61BC00F84A0A /* MLManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		FFD588892ADE298D00025460 = {
@@ -160,7 +175,6 @@
 				FFD5889B2ADE298D00025460 /* RainSensorPredictionApp.swift */,
 				FFD5889F2ADE298E00025460 /* Assets.xcassets */,
 				FFD588A12ADE298E00025460 /* Preview Content */,
-				FF833E722ADF40AE0078C5CE /* CoreMotionManager.swift */,
 			);
 			path = "RainSensorPrediction Watch App";
 			sourceTree = "<group>";
@@ -348,11 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9265432AEA61BC00F84A0A /* MLManager.swift in Sources */,
 				FF833E732ADF40AE0078C5CE /* CoreMotionManager.swift in Sources */,
 				FF833E682ADE33A50078C5CE /* Weather.swift in Sources */,
 				FF833E6C2ADE36A60078C5CE /* Alert.swift in Sources */,
 				FF833E662ADE33360078C5CE /* MainView-ViewModel.swift in Sources */,
 				FF92653C2AEA38C900F84A0A /* APError.swift in Sources */,
+				FF9265402AEA4A0700F84A0A /* RandomForestModel.mlpackage in Sources */,
 				FFD5889E2ADE298D00025460 /* MainView.swift in Sources */,
 				FFD5889C2ADE298D00025460 /* RainSensorPredictionApp.swift in Sources */,
 			);
@@ -580,11 +596,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,4";
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -600,12 +616,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ryanl.com.me.RainSensorPrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,4";
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
